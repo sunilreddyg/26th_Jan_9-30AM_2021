@@ -16,7 +16,9 @@ public class RobotA
 	
 	public static void main(String args[])
 	{
-		
+			RobotA obj=new RobotA();
+			obj.walk();
+			obj.run();
 	}
 	
 }
