@@ -1,6 +1,6 @@
 package mq.java.core.other_package;
 
-import org.openqa.selenium.Keys;
+
 
 import mq.java.core.Variables.Global_Variables;
 import mq.java.core.methods.RobotA;
@@ -26,6 +26,8 @@ public class Run_Other_Package_Methods_And_Varaibles
 		
 		String x=Global_Variables.email;
 		System.out.println(x);
+		
+		new Global_Variables().method1();
 		
 	}
 

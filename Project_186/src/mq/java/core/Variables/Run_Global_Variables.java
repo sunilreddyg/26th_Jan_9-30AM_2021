@@ -21,12 +21,13 @@ public class Run_Global_Variables {
 		String y=obj.name;
 		System.out.println(y);
 		
+		
 		/*
 		 * Calling static variables
 		 * 			datatype var=Classname.Variablename():
 		 */
-		String my_email=Global_Variables.email;
-		System.out.println(my_email);
+		String My_email=Global_Variables.email;
+		System.out.println(My_email);
 		
 		double Fee=Global_Variables.course_fee;
 		System.out.println(Fee);
