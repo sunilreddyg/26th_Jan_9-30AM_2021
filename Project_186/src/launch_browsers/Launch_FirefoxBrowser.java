@@ -20,6 +20,10 @@ public class Launch_FirefoxBrowser {
 		System.setProperty("webdriver.gecko.driver", "Drivers\\geckodriver.exe");
 		FirefoxDriver firefox=new FirefoxDriver();
 		firefox.get("http://gmail.com");
+		
+		System.out.println(firefox.getTitle());
+		
+		firefox.close();
 	}
 
 }

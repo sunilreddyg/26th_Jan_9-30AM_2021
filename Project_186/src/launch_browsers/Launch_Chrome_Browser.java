@@ -29,7 +29,9 @@ public class Launch_Chrome_Browser {
 		ChromeDriver chrome=new ChromeDriver();
 		chrome.get("http://google.com");
 		
+		System.out.println(chrome.getTitle());
 		
+		chrome.close();
 		
 		
 	}
