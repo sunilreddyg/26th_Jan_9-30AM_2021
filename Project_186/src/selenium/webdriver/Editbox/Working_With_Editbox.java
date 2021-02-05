@@ -38,6 +38,8 @@ public class Working_With_Editbox
 		 * 			This programs are just for understanding purpose
 		 * 			Don't use as regular commands
 		 * 			In Webdriver to handle every situvation separate commands available
+		 * 
+		 * 			=> If keyboard shortcut failed webdriver doesn't throw any exception
 		 */
 		
 		
