@@ -21,6 +21,7 @@ public class Dropdown_Selection_Commands
 		.selectByVisibleText("Andhra Pradesh");
 		Thread.sleep(5000);
 		
+		
 		//Selecting dropdown otpion using value property
 		new Select(driver.findElement(By.id("customCity")))
 		.selectByValue("ananthapur");
