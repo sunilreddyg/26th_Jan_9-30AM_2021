@@ -51,8 +51,7 @@ public class Verify_Dropdown_Accept_MoreThan_One_Option {
 			{
 				System.out.println("dropdown is not acceptign multiple selections");
 			}
-			
-			
+		
 		}
 		else
 		{
