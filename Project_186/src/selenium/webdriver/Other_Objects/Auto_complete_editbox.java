@@ -49,7 +49,6 @@ public class Auto_complete_editbox
 		//Click Button
 		driver.findElement(By.id("SearchBtn")).click();
 		
-		
 	}
 
 }
