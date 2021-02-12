@@ -107,7 +107,7 @@ CssAttribute syntax:-->
 		By.cssSelector("div[aria-label='Login']")
 		By.cssSelector("div[type='submit']")
 		
-		=> We can alos use * instead of tagname
+		=> We can also use * instead of tagname
 		By.cssSelector("*[id='Sbtn']")
 
 Other than id unique attributes followed by developers.:-->
@@ -115,6 +115,7 @@ Other than id unique attributes followed by developers.:-->
 		aria-label
 		placeholder
 		dataid
+		data-cy
 		datatrackingid
 		datareactid
 		href
@@ -134,7 +135,7 @@ page htmlsource:--->
 Identify 3rd element:--->
 		
 			By.id("x")  ---> 2nd object
-			By.cssSelector("div[id='x'][type='c']")  --> 3rd object
+			By.cssSelector("div[id='x'][type='C']")  --> 3rd object
 =========================================================================
 Css_Attribute with class property:-->
 		
@@ -152,20 +153,16 @@ Dynamic Css:--> [CssSelector identify location with partial attributes]
 	To target Web element location with partial attributes, CssSelector follow
 	below regular expressions...
 	
-
 		=>    *   [Any matching characters]
 		=>    $   [End characters]
 		=>    ^   [Start characters]
-
 Example:--> target element with matching characters
 
 	Manual Browser         :-->   <input  id="687dg_email_987jjhf"></input>
 	Automation Browser     :-->   <input  id="54fsdf_email_34534"></input>
 
-
 		by.cssSelector("input[id*='email']")
 ===========================================================================
-
 Example:--> target element with start characters
 
 	Manual Browser         :-->   <input  id="email_987jjhf"></input>
@@ -179,7 +176,6 @@ Example:--> target element with end characters
 	Manual Browser         :-->   <input  id="987jjhf_email"></input>
 	Automation Browser     :-->   <input  id="34534_email"></input>
 
-
 		by.cssSelector("input[id$='email']")
 ============================================================================
 Example:-->  Target child node with parent Node.
@@ -189,7 +185,6 @@ HtmlSource:-->
 	<div id="login_conainer"  class="demo">
 		<input id="9ju7yg876"  type="text">  ---->Target Element
 	</div>	
-
 
 
 	Syntax:-->
