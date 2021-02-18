@@ -1,8 +1,6 @@
 package mq.java.core.other_package;
 
-
-
-import mq.java.core.Variables.Global_Variables;
+import mq.java.core.Variables.Global_Variables.Global_Variables;
 import mq.java.core.methods.RobotA;
 import mq.java.core.static_methods.InputDevices;
 
@@ -24,10 +22,7 @@ public class Run_Other_Package_Methods_And_Varaibles
 		
 		InputDevices.KeyBoard();
 		
-		String x=Global_Variables.email;
-		System.out.println(x);
 		
-		new Global_Variables().method1();
 		
 	}
 

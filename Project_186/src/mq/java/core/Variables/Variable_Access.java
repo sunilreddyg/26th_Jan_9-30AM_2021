@@ -3,8 +3,8 @@ package mq.java.core.Variables;
 public class Variable_Access 
 {
 	
-	static int a=100;
-	int b=200;
+	static int a=100;		//static variable
+	int b=200;				//Instant variable
 		
 	void method1()
 	{

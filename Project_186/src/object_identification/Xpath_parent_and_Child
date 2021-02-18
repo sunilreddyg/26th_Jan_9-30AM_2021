@@ -288,6 +288,25 @@ Example:--->
 			
 		//*[text()='user2']/ancestor::ul/following-sibling::ul[2]/li[2]		 
 
+========================================================================
+Example15:--> Target parent Element using Child element
+HtmlSource:-->	
+			<div class="origin">
+				<input id="firstname" name="new">        
+			</div>	
+	Syntax:-->
+			//input[@id='firstname']/parent::div
+=========================================================================
+Example16:--> identify first descendant element
+HtmlSource:-->
 
-
-
+	<div id="login_container"  class="demo">      ---->Source
+		<div class="demo">
+			<input id="9ju7yg876"  type="text">  ---->Target Element
+		</div>
+	</div>	
+	
+		Syntax:-->
+		
+		//div[@id='login_container']/descendant::input
+===============================================================			
