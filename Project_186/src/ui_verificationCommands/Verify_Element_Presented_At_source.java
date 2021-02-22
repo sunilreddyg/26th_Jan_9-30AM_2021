@@ -37,15 +37,27 @@ public class Verify_Element_Presented_At_source
 		 * Dynamic Objects Handling using try catch block..
 		 */
 		
-	
 		try {
 			
-			page.findElement(By.id("email")).clear();
-			page.findElement(By.id("email")).sendKeys("sunil@gmail.com");
-	
+			page.findElement(By.id("emailv")).clear();
+			page.findElement(By.id("emailv")).sendKeys("sunil@gmail.com");
+			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		System.out.println("Run Continued");
+	
+		/*
+		 * Possible Exception in above lines of code:-->
+		 * 			1. FindElement --> NoSuchElementException
+		 * 			2. Clear:--------> InvalidElementStateException
+		 * 		Both exceptions are interupted type, Incase you
+		 * 		want to conitinue excecution on error use try-catch block
+		 */
+		
+		
 		
 		System.out.println("Run Continued");
 
