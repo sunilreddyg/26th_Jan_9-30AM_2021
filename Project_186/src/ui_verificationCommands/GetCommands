@@ -119,16 +119,13 @@ getAttribute("propertyname");
 		  	WebElement Element=driver.findElement(By.id("x"));
 		  	String value=Element.getAttribute("attributename");
 		  	System.out.println(value);	
-		  	
-				  	
+		+			  	
   	Note:--> Developer use attributes, to chanage runtime
   			behaviour of element. by capture element attributes
   			at runtime we can prove element behaviour available
-			w.r.t client requirement.
-		  				
+			w.r.t client requirement.		  				
 Example:-->
 			   Captrue editbox input value.
-			   
 			   	Syntax:-->  
 			   	//Identify Editbox
 				WebElement Editbox=driver.findElement(By.id("x"));	
