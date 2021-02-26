@@ -30,7 +30,10 @@ User interface validation commands:-->
 						
 				=> Method return false when selected element ready state is OFF  
 						[Element is disabale and not accepting any type of action]
-								
+							
+				Note:--> InEnabled method only works when html object
+						 have disabled="disabled" property 
+						 [Only when your are checking disabeld property]
 			Syntax:-->
 					//Identify Element
 					WebElement Element=driver.findElement(By.id("x"));
@@ -38,9 +41,12 @@ User interface validation commands:-->
 					boolean flag=Element.IsEnabled();
 					System.out.println("Element Enabled "+flag);
 =====================================================================							
-=>IsSelected:-->
+=>IsSelected:-->			
 			Method return true/false  on element selection state
-			for radio button and checkboxes.
+			This method only works for radio buttons and checkboxes.
+			
+			Note:--> Real radio buttons which contains input tag and properties
+						type="radio" or  type="checkbox"
 			
 			Syntax:-->
 					//Identify Element
@@ -60,10 +66,12 @@ to deselect checkbox :---->
 			//Identify Element
 			WebElement Checkbox=driver.findElement(By.id("x"));
 	
-			if(Checkbox.isSeelcted())
+			if(Checkbox.isSelected())
 			{
-				Checkbox.click();
+				Cehckbox.click();
 			}
+	
+	
 	
 to select checkbox:-->
 
