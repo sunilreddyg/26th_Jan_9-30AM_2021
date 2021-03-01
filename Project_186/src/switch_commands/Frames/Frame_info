@@ -72,7 +72,7 @@ Example:--->
 		==> Identify location under frame
 		driver.findElement(By.id("firstname"));
 		
-------------------------------------------------------------------------------------------------->
+--------------------------------------------------------------->
 Example:-->
 	Switch to frame using index number:--->
 
@@ -115,3 +115,4 @@ Frame Syntax:-->
 		=> Switching to frame using index number.
 		driver.switchTo().frame(5);
 ================================================================>>
+Note:--> selenium ide can record frame actions.
