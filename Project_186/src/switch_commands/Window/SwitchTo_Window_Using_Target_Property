@@ -1,0 +1,15 @@
+
+HyperLink:--.
+		Hyperlink opens page new TAB or WINDOW.
+		
+		<a href="http://messenger.com"  target="_new" >Messenger </a>
+		
+		//Switch to window Using target property
+		driver.switchTo().window("_new");
+		
+		Note:--> Don't user when target property defned as blank
+		<a href="http://messenger.com"  target="_Blank" >Messenger </a>
+		
+		
+		
+		
