@@ -17,6 +17,9 @@ public class Disable_infoBars
 		WebDriver driver=new ChromeDriver(options);
 		driver.get("http://facebook.com");
 		System.out.println("Site is up and ready to use..");
+		
+		
+		
 
 
 	}
