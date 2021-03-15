@@ -58,6 +58,7 @@ Foreach:-->
 =====================================================================
 while:-->
 	=> While is a condition based loop.
+	=> While accept only boolean conciditon
 	=> While accept loop when condition return true
 			and continue iteration until condition return false.
 	=> During while loop we should provide icrement/decrement

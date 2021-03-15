@@ -1,4 +1,4 @@
-package mq.corejava.Loops;
+package mq.java.core.Loops;
 
 import java.io.File;
 
@@ -32,6 +32,7 @@ public class Group_Links {
 		for (int i = 10; i < links.length; i++) 
 		{
 			driver.findElement(By.linkText(links[i])).click();
+			
 			Thread.sleep(3000);
 			System.out.println(links[i]+"===> "+driver.getTitle());
 			
