@@ -111,7 +111,7 @@ Collections:-->
  					in Linktextlist Insertion of data and removal to 
  					data in faster than Arraylist..				
  							
- 								List<String> list=new LinkedList<String>();					
+ 					List<String> list=new LinkedList<String>();					
  =============================================================
  Map:-->
 		Map is a interface class which store pair objects

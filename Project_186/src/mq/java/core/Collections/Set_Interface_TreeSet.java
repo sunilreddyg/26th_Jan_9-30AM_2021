@@ -1,16 +1,18 @@
 package mq.java.core.Collections;
 
-import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
-public class Set_InterFace_HashSet {
+public class Set_Interface_TreeSet {
 
-	public static void main(String[] args) 
-	{
+	public static void main(String[] args) {
 		
+	
 		
-		Set<String> set=new HashSet<String>();
+		Set<String> set=new TreeSet<String>();
 		set.add("OnePlus");
 		set.add("Samsung");
 		set.add("Vivo");
@@ -58,8 +60,20 @@ public class Set_InterFace_HashSet {
 		}
 		
 		
+		System.out.println("\n");
 		
+		//Convert all Set Interface collections into list
+		List<String> list=new ArrayList<String>(set);
+		//Get single object using index number 
+		System.out.println(list.get(2));
 		
+		for (String string : list) 
+		{
+			System.out.println("*"+string);
+			
+		}
+		
+
 	}
 
 }
