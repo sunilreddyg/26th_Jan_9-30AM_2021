@@ -1,16 +1,16 @@
 package findElements;
 
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Select_Required_Date {
+public class Click_Active_Links_At_DatePicker {
 
-	public static void main(String[] args) throws InterruptedException 
+	public static void main(String[] args) throws Exception
 	{
-	
 		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.spicejet.com/");
@@ -30,26 +30,35 @@ public class Select_Required_Date {
 			Runtime_Class=Next_button.getAttribute("class");
 			flag=Runtime_Class.contains("disabled");
 			
-			//Target Header
-			WebElement Month_Header=driver.findElement(By.xpath("//span[@class='ui-datepicker-month']"));
-			//Get Text of header
-			String Runtime_Month_Name=Month_Header.getText();
-			System.out.println(Runtime_Month_Name);
-			if(Runtime_Month_Name.equals("August"))
+		
+			WebElement Active_month=driver.findElement(By.cssSelector(".ui-datepicker-calendar"));
+			List<WebElement> All_Dates=Active_month.findElements(By.tagName("a"));
+		
+			//Iterate for number of links
+			for (int i = 0; i < All_Dates.size(); i++) 
 			{
-				driver.findElement(By.linkText("24")).click();
-				break;
+				All_Dates.get(i).click();
+				Thread.sleep(500);
+				
+				DatePicker.click();
+				Thread.sleep(500);
+				
+				//Restore all references to avoid stale element reference exception
+				Active_month=driver.findElement(By.cssSelector(".ui-datepicker-calendar"));
+				All_Dates=Active_month.findElements(By.tagName("a"));
 			}
 			
 			
+			Next_button=driver.findElement(By.xpath("//a[@title='Next']"));
+			Runtime_Class=Next_button.getAttribute("class");
+			flag=Runtime_Class.contains("disabled");
 			
-
 			Next_button.click();
 			Thread.sleep(2000);
-			
-			
+				
 			
 		}
+
 
 	}
 
