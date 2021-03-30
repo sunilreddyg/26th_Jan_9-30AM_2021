@@ -15,8 +15,7 @@ public class Run_SearchTrains {
 		driver.get("https://www.cleartrip.com/trains");
 		driver.manage().window().maximize();
 		
-	
-		
+
 		//Create object for class
 		Search_Trains obj=new Search_Trains(driver);
 		obj.Verify_Cleartrip_Trains_page_title();
